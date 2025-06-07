@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Racing Simulator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
 
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442');">
+    <div class="bg-black bg-opacity-60 absolute inset-0"></div>
+    <div class="z-10 text-center px-4">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">CRS</h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-6">Погрузись в мир высокоскоростных гонок</p>
+      <a href="#features" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-full transition">Смотреть подробнее</a>
+    </div>
+  </section>
+
+  <section id="trailer" class="py-20 bg-gray-900 px-6 md:px-20">
+    <h2 class="text-4xl font-bold text-center mb-8">Официальный трейлер</h2>
+    <div class="flex justify-center">
+      <div class="w-full md:w-3/4 aspect-video">
+        <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                title="CRS Trailer" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-20 bg-black px-6 md:px-20">
+    <h2 class="text-4xl font-bold text-center mb-12">Особенности игры</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-gray-800 rounded-xl p-6 hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Фотореалистичная графика</h3>
+        <p class="text-gray-400">Наслаждайся детализированными машинами и трассами, созданными на Unity.</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Реалистичная физика</h3>
+        <p class="text-gray-400">Каждая машина уникальна: подвеска, сцепление, мощность — всё настраивается вручную.</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Мультиплеер и карьера</h3>
+        <p class="text-gray-400">Соревнуйся с друзьями или проходи одиночную компанию, улучшая свой автопарк.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cars" class="py-20 bg-gray-900 px-6 md:px-20">
+    <h2 class="text-4xl font-bold text-center mb-12">Автомобили и трассы</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h3 class="text-2xl font-semibold mb-4">Автомобили</h3>
+        <ul class="list-disc list-inside text-gray-400 space-y-1">
+          <li>Tesla Model 3 (электро)</li>
+          <li>Pagani Huayra (с активной аэродинамикой)</li>
+          <li>Rolls-Royce Dawn</li>
+          <li>Aston Martin Vanquish</li>
+          <li>50+ других авто разных классов</li>
+        </ul>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h3 class="text-2xl font-semibold mb-4">Трассы</h3>
+        <ul class="list-disc list-inside text-gray-400 space-y-1">
+          <li>Городской центр (ночная гонка)</li>
+          <li>Горный серпантин</li>
+          <li>Тестовая гоночная трасса</li>
+          <li>Пустынная дорога</li>
+          <li>Будущие обновления добавят новые локации</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-black px-6 md:px-20">
+    <h2 class="text-4xl font-bold text-center mb-12">Скриншоты</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="https://images.unsplash.com/photo-1608472580562-96ac4572d36d" class="rounded-lg hover:scale-105 transition duration-300">
+      <img src="https://images.unsplash.com/photo-1571731956672-d92e1834b6ec" class="rounded-lg hover:scale-105 transition duration-300">
+      <img src="https://images.unsplash.com/photo-1589394813171-1089f3d4e65d" class="rounded-lg hover:scale-105 transition duration-300">
+    </div>
+  </section>
+
+  <section id="blog" class="py-20 bg-gray-900 px-6 md:px-20">
+    <h2 class="text-4xl font-bold text-center mb-12">Новости разработки</h2>
+    <div class="space-y-8">
+      <div class="bg-gray-800 rounded-lg p-6">
+        <h3 class="text-2xl font-semibold mb-2">Обновление 0.9.5 — Новый автосалон</h3>
+        <p class="text-gray-400">Теперь в игре доступно улучшение машин через СТО. Также добавлена система аренды автомобилей и переработано меню.</p>
+      </div>
+      <div class="bg-gray-800 rounded-lg p-6">
+        <h3 class="text-2xl font-semibold mb-2">0.9.0 — Появление Pagani</h3>
+        <p class="text-gray-400">Добавлена Pagani Huayra с полностью настраиваемыми спойлерами и реалистичной аэродинамикой.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gradient-to-r from-red-700 to-red-900 text-center px-4">
+    <h2 class="text-4xl font-bold mb-6">Готов начать?</h2>
+    <p class="text-lg text-white mb-6">Скачай CRS бесплатно и начни свою гоночную карьеру прямо сейчас!</p>
+    <a href="#" class="bg-white text-black py-3 px-6 rounded-full font-semibold hover:bg-gray-200 transition">Скачать игру</a>
+  </section>
+
+  <footer class="bg-gray-950 text-center text-gray-500 py-6 text-sm">
+    © 2025 Atlantis Studio. Все права защищены.
+  </footer>
+</body>
+</html>
